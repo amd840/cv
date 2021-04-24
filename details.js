@@ -1,4 +1,4 @@
-var OBJECTIVE = 'Senior Software Engineering Student Study at King Fahad University of Petroleum and Minirals. Expected Graduation at May 2021 Mobile developer works in: Flutter, Xcode and Android Studio'
+var OBJECTIVE = 'Senior Software Engineering Student Study at King Fahad University of Petroleum and Minirals.<br> Expected Graduation at May 2021 Mobile developer works in: Flutter, Xcode and Kotlin and Java'
 var EDUCATIONS = 'King Fahad University of Petroleum and Minerals, B.S., Software Engineering Expected May 2021.'
 var SHORTCOURSES = [{ url: 'https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjkmY2VydF9ubz02JnRlcm09MjYmc2Vzc2lvbj0x', title: 'Data Analysis using Python', date: 'Feb 2021' },
     { url: 'http://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjAmY2VydF9ubz03JnRlcm09MjUmc2Vzc2lvbj0x', title: 'Introduction to Marketing (For Engineers and Scientists', date: 'Sep 2020' }, { url: 'https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0yMSZjZXJ0X25vPTMmdGVybT0xNSZzZXNzaW9uPTE=', title: 'Short course in Embedded system with Arduino as platform', date: 'Aug 2017' }
@@ -33,7 +33,7 @@ var LANGUAGES
 
 $('#OBJECTIVE').click(function() {
         $('#title').text("Ahmed Almoairfi");
-        $('#details').text(OBJECTIVE);
+        $('#details').html(OBJECTIVE);
         $('#titleContainer').attr('hidden', false);
 
         $('.ui.sidebar').sidebar('toggle');
