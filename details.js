@@ -18,12 +18,13 @@ var PROJECTS = [{ detail: 'Work in privacy project to edit text privately and se
     , { detail: 'Work on a prototype of KFUPM registration system with my team for software course', urlType: 'GitHub', url: 'https://github.com/mojtaba-alamer/Registration_System' }
 
 ]
+var icon = { GitHub: 'large github middle aligned icon', IOS: 'large app store ios middle aligned icon', Doc: 'large file word middle aligned icon', 'Beta Website': 'large safari middle aligned icon' }
 
 var ACTIVITIES = [{ detail: 'Member in many clubs in KFUPM (computer club, photography club and visitation club)', img: './img/kfupm.jpg', date: '' }, { detail: 'Vice president of Computer Club in KFUPM. I lead the project of the club for the first semester.', img: './img/cclub.jpg', date: 'sep 2019 - Sep 2020' }, { detail: 'President of Computer club in KFUPM', img: './img/cclub.jpg', date: 'Oct 2020 - present' }, { detail: 'Volunteering on KFUPM voluntary workday three times', img: './img/volunteer.jpg', date: '2017, 2019, 2020' }]
 var PROGRAMMINGLANGUAGES = [{ name: 'Swift', img: 'http://assets.stickpng.com/images/58482ce4cef1014c0b5e4a4c.png' }, { name: 'Python', img: 'http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png' }, { name: 'Kotlin', img: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png' },
-    { name: 'java', img: 'http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png' }, { name: 'dart', img: 'https://dart.dev/assets/shared/dart-logo-for-shares.png?2' }, { name: 'django', img: 'https://cdn.freebiesupply.com/logos/thumbs/2x/django-community-logo.png' },
+    { name: 'java', img: 'http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png' }, { name: 'dart', img: './img/dart.jpg' }, { name: 'django', img: './img/dj.png' },
     { name: 'flutter', img: 'https://i.pinimg.com/originals/c1/65/1f/c1651f598d212acdfe551f103548e495.png' }, { name: 'javascript', img: 'https://e7.pngegg.com/pngimages/780/695/png-clipart-javascript-comment-html-logo-international-conference-on-missions-node-js-icon-angle-text.png' }, { name: 'php', img: 'https://pngimg.com/uploads/php/php_PNG12.png' },
-    { name: 'sql', img: 'https://img2.arabpng.com/20180526/oqt/kisspng-microsoft-sql-server-mysql-database-logo-5b098c6ebad6d7.7316225815273524307653.jpg' }, { name: 'html', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png' }, { name: 'css', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.png' },
+    { name: 'sql', img: './img/sql.png' }, { name: 'html', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png' }, { name: 'css', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.png' },
     { name: 'rest api', img: 'https://miro.medium.com/max/2720/1*3R6tTamJyAn2mRBgzfFlfQ.png' }, { name: 'ajax', img: './img/ajax.png' }, { name: 'C', img: 'https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png' }
 ]
 
@@ -31,7 +32,7 @@ var COMPUTERSKILL
 var LANGUAGES
 
 $('#OBJECTIVE').click(function() {
-        $('#title').text("OBJECTIVE");
+        $('#title').text("Ahmed Almoairfi");
         $('#details').text(OBJECTIVE);
         $('#titleContainer').attr('hidden', false);
 
@@ -51,7 +52,7 @@ $('#EDUCATIONS').click(function() {
 
     var additions = ''
     SHORTCOURSES.forEach((values, keys) => {
-        additions += `<div class="item"><i class="large github middle aligned icon"></i><div class="content"><a class="header" href='${values['url']}'>${values['title']}</a><div class="description">${values['date']}</div> </div></div>`
+        additions += `<div class="item"><img class="ui avatar image" src= "./img/cer.png"></i><div class="content"><a class="header" href='${values['url']}'>${values['title']}</a><div class="description">${values['date']}</div> </div></div>`
     })
 
     $('#additionsTitle').text("SHORT COURSES");
@@ -85,7 +86,7 @@ $('#PROJECTS').click(function() {
     additions = ''
     PROJECTS.forEach((values, keys) => {
 
-        additions += `<div class="item"><i class="large github middle aligned icon"></i><div class="content"><p class="header">${values['detail']}</p><a href="${values['url']}" class="description">${values['urlType']}</a> </div></div>`
+        additions += `<div class="item"><i class="${icon[values['urlType']]}"></i><div class="content"><p class="header">${values['detail']}</p><a href="${values['url']}" class="description">${values['urlType']}</a> </div></div>`
     })
 
     $('#additionsTitle').text("PROJECTS");
@@ -164,6 +165,16 @@ $('#PROGRAMMING000LANGUAGES').click(function() {
 
     $('#additionsTitle').text("PROGRAMMING LANGUAGES");
     $('#additions').html(additions);
+});
+
+$('#LANGUAGES').click(function() {
+
+    $('.mini.modal')
+        .modal('show');
+});
+$('#DownloadCV').click(function() {
+
+
 });
 
 

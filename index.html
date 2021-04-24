@@ -1,296 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Ahmed Almoairfi</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV about Ahmed Almoairfi">
-    <meta name="author" content="Ahmed Almoairfi">
 
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
     <style>
-        a:link {
-            text-decoration: none;
+        body {
+            background-color: #e4f6f5;
+            background: #e4f6f5;
         }
-        img.lang{
-            height:50px;
-           
+        
+        body.pushable>.pusher {
+            background: #e4f6f5;
+            min-height: 100%;
+        }
+        
+        .pusher {
+            min-height: 120%;
+        }
+        
+        .background {
+            background-color: #e4f6f5;
+        }
+        
+        .buttonc {
+            background-color: #bae8e8;
+            background: #bae8e8;
+        }
+        
+        .ui.piled.segment:after {
+            /* background-color: #2c698d; */
+        }
+        
+        .ui.piled.segment::before {
+            /* background-color: #2c698d; */
+        }
+        
+        .ui.piled.segment {
+            /* background-color: #2c698d; */
+        }
+        
+        .body.pushable {
+            background-color: #e4f6f5;
+            background: #e4f6f5;
+        }
+        
+        .ui.vertical.footer.segment {
+            background-color: #e4f6f5;
+        }
+        
+        @media (min-height: 320px) {
+            .ui.vertical.footer.segment {
+                /* Increased specificity for SO snippet priority */
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 760px) {
+            body.pushable>.pusher {
+                /* background: #e4f6f5; */
+                min-height: 150%;
+            }
         }
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-<div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">CV </div>
-      <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action active" id="list-OBJECTIVE-list" data-bs-toggle="list" href="#list-OBJECTIVE" role="tab" aria-controls="OBJECTIVE">OBJECTIVE</a>
-                    <a class="list-group-item list-group-item-action" id="list-EDUCATIONS-list" data-bs-toggle="list" href="#list-EDUCATIONS" role="tab" aria-controls="EDUCATIONS">EDUCATIONS</a>
-                    <a class="list-group-item list-group-item-action" id="list-SHORT-COURSES-list" data-bs-toggle="list" href="#list-SHORT-COURSES" role="tab" aria-controls="SHORT-COURSES">SHORT COURSES</a>
+    <div class="ui sidebar inverted vertical menu">
 
-                    
-                    <a class="list-group-item list-group-item-action" id="list-EXPERIENCES-list" data-bs-toggle="list" href="#list-EXPERIENCES" role="tab" aria-controls="EXPERIENCES">EXPERIENCES</a>
-                <a class="list-group-item list-group-item-action" id="list-PROJECTS-list" data-bs-toggle="list" href="#list-PROJECT" role="tab" aria-controls="PROJECT">PROJECTS</a>
+        <a id='OBJECTIVE' class="item">Ahmed Almoairfi</a>
+        <a id='EDUCATIONS' class="item">EDUCATIONS</a>
+        <a id='EXPERIENCES' class="item">EXPERIENCES</a>
+        <a id='PROJECTS' class="item">PROJECTS</a>
+        <a id='ACTIVITIES' class="item">ACTIVITIES</a>
+        <a id='PROGRAMMINGLANGUAGES' class="item">PROGRAMMING LANGUAGES</a>
+        <a id='LANGUAGES' class="item">LANGUAGES</a>
+        <a id='DownloadCV' target="_blank" href="./AhmedAlmoairfi.pdf" class="item">Download the CV</a>
 
-                    <a class="list-group-item list-group-item-action" id="list-ACTIVITIES-list" data-bs-toggle="list" href="#list-ACTIVITIES" role="tab" aria-controls="ACTIVITIES">ACTIVITIES</a>
-                    <a class="list-group-item list-group-item-action" id="list-LANGUAGES-list" data-bs-toggle="list" href="#list-LANGUAGES" role="tab" aria-controls="LANGUAGES">LANGUAGES</a>
-                    <a class="list-group-item list-group-item-action" id="list-PROGRAMMING-LANGUAGES-list" data-bs-toggle="list" href="#list-PROGRAMMING-LANGUAGES" role="tab" aria-controls="PROGRAMMING LANGUAGES">PROGRAMMING LANGUAGES</a>
-                    <a class="list-group-item list-group-item-action" id="list-COMPUTER-SKILLS-list" data-bs-toggle="list" href="#list-COMPUTER-SKILLS" role="tab" aria-controls="COMPUTER-SKILLS">COMPUTER SKILLS</a>
-                    <a class="list-group-item list-group-item-action" target="_blank" href='./AhmedAlmoairfi.pdf'>Download the CV</a>
-          
-      </div>
+
     </div>
-    <!-- /#sidebar-wrapper -->
+    <div class="pusher">
 
-<div id="page-content-wrapper">
+        <!-- Site content !-->
+        <div class="ui fixed inverted main menu">
+            <div class="ui container ">
+                <Button id="menuBtn" class="ui button icon item" onclick="$('.ui.sidebar').sidebar('toggle');">
+                    <i class="content icon"></i>
+                </Button>
+
+                <div class="item">
+                    Ahmed Almoairfi
+                </div>
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="btn btn-dark" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
-
-                <a class="navbar-brand" ><img src ="./self.png" style="height:40px;margin: auth 30px " />Ahmed Almoairfi</a>
-                    <div class="navbar-nav me-0 mb-0 mb-lg-0">
-                            <a class="nav-link" href="./contactme.html">Contact Me</a>
-                    </div>
             </div>
-        </nav>
-
-        <div class="container-fluid " style="padding :10px" >
-        
-          
-            <div class="border" style="text-align:center;padding: 10px; margin :10px">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-OBJECTIVE" role="tabpanel" aria-labelledby="list-OBJECTIVE-list">Senior Software Engineering Student Study at King Fahad University of Petroleum and Minirals. 
-<br>Expected Graduation at May 2021<br>
-
-Mobile developer works on: Flutter, Xcode and Android Studio.<br>
-Backend developer works on: Python Django.
-</div>
-                    <div class="tab-pane fade" id="list-EDUCATIONS" role="tabpanel" aria-labelledby="list-EDUCATIONS-list">
-                        <ul class="list-group list-group-flush" style="text-align:left;">
-                            <li class="list-group-item">King Fahad University of Petroleum and Minerals, B.S., Software Engineering Expected May 2021.</li>
-                            <li class="list-group-item">Rowaad Al-Olum high school, Diploma, May 2016.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="list-SHORT-COURSES" role="tabpanel" aria-labelledby="list-SHORT-COURSES-list">
-                        <ul class="list-group list-group-flush" style="text-align:left;">
-                            <li class="list-group-item"><a href="https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0yMSZjZXJ0X25vPTMmdGVybT0xNSZzZXNzaW9uPTE=">Short course in Embedded system with Arduino as platform.</a></li>
-                            <li class="list-group-item"><a href="https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjkmY2VydF9ubz02JnRlcm09MjYmc2Vzc2lvbj0x">Data Analysis using Python</a></li>
-
-                            <li class="list-group-item"><a href="http://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjAmY2VydF9ubz03JnRlcm09MjUmc2Vzc2lvbj0x">Introduction to Marketing (For Engineers and Scientists)</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade " id="list-EXPERIENCES" role="tabpanel" aria-labelledby="list-EXPERIENCES-list">
-                        <ul class="list-group list-group-flush" style="text-align:left;">
-                            <li class="list-group-item">Work in software project for senior project</li>
-                            <li class="list-group-item">Software Engineering Trainee at NyarTech Company.</li>
-                            <li class="list-group-item">Season job with Zain for one month.</li>
+        </div>
+        <div class="ui container">
+            <Button class="ui button  buttonc black"><i class="sidebar icon"></i>
+            </Button>
 
 
+            <div id="titleContainer" class="ui piled segment">
+                <h4 id='title' class="ui header ">A header</h4>
+                <p id='details' class="ui "></p>
+            </div>
+            <div id="additionsDiv" class='ui raised segment shown' hidden>
+                <h5 id="additionsTitle" class="ui blue ribbon  label">
+                </h5>
+                <p></p>
 
-                        </ul>
-                    </div>
-                       <div class="tab-pane fade " id="list-PROJECT" role="tabpanel" aria-labelledby="list-PROJECT-list">
-                        <ul class="list-group list-group-flush" style="text-align:left;">
-                            <li class="list-group-item">Work in privacy project to edit text privately and securely. <a href='https://github.com/amd840/COE426'>GitHub</a></li>                       
-
-                            <li class="list-group-item">Work on UML diagram with my team for a software course. <a href='https://docs.google.com/document/d/15W9lirOTEpx-E43Cfuio-694b3tX6njonUKL1HDW03Y/edit?usp=sharing'>SRS</a> <a href='https://drive.google.com/file/d/1BOXBQBTXeeQjgF-gsiZ5q6sZ7eykU62R/view?usp=sharing'>SDD</a></li>
-                            <li class="list-group-item">Work on IOS app for KFUPM deanship of student affair. <a href='https://apps.apple.com/sa/app/ikfupm/id1473702047'>IOS</a></li>
-                            <li class="list-group-item">Work on market website for web development course. <a href='http://testharaj.herokuapp.com/'>Beta Website</a></li>
-                            <li class="list-group-item">Work on a prototype of KFUPM registration system with my team for software course.<a href='https://github.com/mojtaba-alamer/Registration_System'>GitHub</a></li>
-
-
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="list-PROJECTS" role="tabpanel" aria-labelledby="list-PROJECTS-list">
-                        
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                        <div class="row g-0">
-                                            <div class="col-md-4">
-                                                <picture id="ember304" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait d-block w-100">
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/230x0w.webp 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/460x0w.webp 2x" media="(min-width: 1069px)" type="image/webp">
-
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/230x0w.png 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)" type="image/png">
-
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/157x0w.webp 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/314x0w.webp 2x" media="(min-width: 735px)" type="image/webp">
-
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/157x0w.png 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/314x0w.png 2x" media="(min-width: 735px)" type="image/png">
-
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/300x0w.webp 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/600x0w.webp 2x" type="image/webp">
-
-                                                    <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/300x0w.png 1x, https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/de/de/8c/dede8ce2-5d93-444a-082b-1c84c4f62d2b/pr_source.png/600x0w.png 2x" type="image/png">
-
-                                                    <img class="we-artwork__image ember304" src="/assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" style="" alt="" height="649" width="300">
-                                                                <style>
-                                                                .ember304, #ember304::before {
-                                                                    width: 300px;
-                                                                    height: 649px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 216.33333333333334%;
-                                                                    }
-                                                            .ember304, #ember304::before {
-                                                                    width: 300px;
-                                                                    height: 649px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 216.33333333333334%;
-                                                                    }
-                                                            @media (min-width: 735px) {
-                                                                    .ember304, #ember304::before {
-                                                                    width: 157px;
-                                                                    height: 339px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 215.92356687898092%;
-                                                                    }
-                                                                    }
-                                                            @media (min-width: 735px) {
-                                                                    .ember304, #ember304::before {
-                                                                    width: 157px;
-                                                                    height: 339px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 215.92356687898092%;
-                                                                    }
-                                                                    }
-                                                            @media (min-width: 1069px) {
-                                                                    .ember304, #ember304::before {
-                                                                    width: 230px;
-                                                                    height: 497px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 216.08695652173915%;
-                                                                    }
-                                                                    }
-                                                            @media (min-width: 1069px) {
-                                                                    .ember304, #ember304::before {
-                                                                    width: 230px;
-                                                                    height: 497px;
-                                                                    }
-                                                                    .ember304::before {
-                                                                    padding-top: 216.08695652173915%;
-                                                                    }
-                                                                    }
-                                                                </style>
-
-                                                </picture>
-                                            </div>
-                                            <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">IKFUPM</h5>
-                                                <p class="card-text">App ror KFUPM student to help the student in the university .</p>
-                                                <p class="card-text">The App Contain Studnet guide, Academic calendar and campus map</p>
-                                                <a href="https://apps.apple.com/us/app/ikfupm/id1473702047#?platform=iphone">Download From App Store</a>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                            </div>
-                                    </div>
-                                </div>
-
-                                <!--<div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                                </div>-->
-                            </div>
-                            
-
-                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </a>
-                        </div>
-                        </div>
-                    <div class="tab-pane fade" id="list-ACTIVITIES" role="tabpanel" aria-labelledby="list-ACTIVITIES-list">
-                        <ul class="list-group list-group-flush" style="text-align:left;">
-                            <li class="list-group-item">Member in many clubs in KFUPM (computer club, photography club and visitation club).</li>
-                            <li class="list-group-item">Vice president of Computer Club in KFUPM. I lead the project of the club for the first semester.</li>
-                            <li class="list-group-item">President of Computer club in KFUPM.</li>
-
-                            <li class="list-group-item">Volunteering on KFUPM voluntary workday three times.</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="list-LANGUAGES" role="tabpanel" aria-labelledby="list-LANGUAGES-list">Arabic • English</div>
-                    <div class="tab-pane fade" id="list-PROGRAMMING-LANGUAGES" role="tabpanel" aria-labelledby="list-PROGRAMMING-LANGUAGES-list">
-                  
-                        <div class='row p-3'>
-                            <div class='col'><img alt='swift' class="lang" src="http://assets.stickpng.com/images/58482ce4cef1014c0b5e4a4c.png"></div>
-                            <div class='col'><img alt='python' class="lang" src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"></div>
-                           <div class='col'><img alt='kotlin' class="lang" src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png"></div>
-                           <div class='col'><img alt='java' class="lang" src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"></div>
-                            <div class='col'><img alt='dart' class="lang" src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2"></div>
-                        </div>
-                          <div class='row p-3'>
-                          <div class='col'><img alt='django' class="lang" src="https://cdn.freebiesupply.com/logos/thumbs/2x/django-community-logo.png"></div>
-                           <div class='col'><img alt='flutter' class="lang" src="https://i.pinimg.com/originals/c1/65/1f/c1651f598d212acdfe551f103548e495.png"></div>
-                         <div class='col'><img alt='javascript' class="lang" src="https://e7.pngegg.com/pngimages/780/695/png-clipart-javascript-comment-html-logo-international-conference-on-missions-node-js-icon-angle-text.png"></div>
-                            <div class='col'><img alt='php' class="lang" src="https://pngimg.com/uploads/php/php_PNG12.png"></div>
-                            <div class='col'><img alt='sql' class="lang" src="https://img2.arabpng.com/20180526/oqt/kisspng-microsoft-sql-server-mysql-database-logo-5b098c6ebad6d7.7316225815273524307653.jpg"></div>
-                        </div>
-                         <div class='row p-2'>
-                            <div class='col'><img alt='html' class="lang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"></div>
-                          <div class='col'><img alt='css' class="lang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.png"></div>
-                           <div class='col'><img alt='rest api' class="lang" src="https://miro.medium.com/max/2720/1*3R6tTamJyAn2mRBgzfFlfQ.png"></div>
-                            <div class='col'><img alt='ajax' class="lang" src="./AJAX_logo_by_gengns.png"></div>
-                            <div class='col'><img alt='c' class="lang" src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png"></div>
-                        </div>
-              
-                    
-                        </div>
-                    <div class="tab-pane fade" id="list-COMPUTER-SKILLS" role="tabpanel" aria-labelledby="list-COMPUTER-SKILLS-list">
-                       
-                          <div class='row p-1'>
-                           <div class='col'><img alt='Microsoft Office' class="lang" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/microsoft-office-512.png"></div>
-                            <div class='col'><img alt='Microsoft Enterprise Architect' class="lang" src="https://www.iag.biz/wp-content/uploads/2016/08/Sparx-Enterprise-Architect-Logo.png"></div>
-                          <div class='col'><img alt='Adobe XD' class="lang" src="https://cdn.iconscout.com/icon/free/png-512/adobe-xd-1869035-1583159.png"></div>
-                        </div>
-                         <div class='row p-3'>
-                           <div class='col'><img alt='XCode' class="lang" src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/d0/88/2a/d0882a24-5851-8833-ec52-5e2792e7ac8a/Xcode-85-220-0-4-2x.png/1200x630bb.png"></div>
-                           <div class='col'><img alt='Android Studio' class="lang" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a9326d72465217.5be8ae1c0a8a7.png"></div>
-                            <div class='col'><img alt='Arduino' class="lang" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg"></div>
-                        </div>
-                         <div class='row p-1'>
-                            <div class='col'><img alt='Adobe Photoshop' class="lang" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png"></div>
-                            <div class='col'><img alt='Adobe Premiere' class="lang" src="https://ar4up.com/wp-content/uploads/2019/01/adobe-premiere-pro-logo-png-and-vector-logo-download-adobe-premiere-pro-png-700_682.png"></div>
-                         <div class='col'><img alt='Adobe After Effect' class="lang" src="https://www.barmaje.com/images/after_effectsCS6.png"></div>
-
-                        </div>
-                    
-                    </div>
+                <div id="additions" class="ui relaxed divided list">
 
                 </div>
-            
             </div>
-            
+        </div>
+
+        <div id="footer" class="ui vertical footer segment ">
+            <div class="ui center aligned container">
+                <div class="ui stackable grid">
+                    <div class="four wide column">
+                        <h4 class="ui header">Contact Info</h4>
+                        <div class="ui link list">
+                            <a class="item" href="mailto:ahmedalmoairfi@gmail.com" target="_blank"><i class="linkedin icon"></i>ahmedalmoairfi@gmail.com</a>
+                            <a class="item right justified" href="tel:+966543096731" target="_blank"><i class="phone icon"></i>+966 543096731</a>
+
+                            <a class="item" href="https://www.linkedin.com/in/ahmed-almoairfi-009a57167/" target="_blank"><i class="linkedin icon"></i>ahmed-almoairfi</a>
+                        </div>
+                    </div>
+
+                    <div class="ten wide right floated column">
+                        <h4 class="ui header">About Me</h4>
+                        <p> Mobile developer works on: Flutter, Xcode, Kotlin and Java<br> Backend developer works on: Python Django</p>
+                    </div>
+                </div>
+                <div class="ui section divider"></div>
+                <div class="ui horizontal small divided link list">
+                    <a class="item">© May 2021 by Ahmed Almoairfi</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+    <div class="ui mini modal">
+        <div class="header">LANGUAGES</div>
+        <div class="content">
+            <p>Arabic : Native</p>
+            <p>English : Fluent</p>
+
+        </div>
+        <div class="actions">
+            <!-- <div class="ui approve button">OK</div> -->
+            <!-- <div class="ui button">Neutral</div> -->
+            <div class="ui cancel button">OK</div>
+        </div>
+    </div>
+    <script>
+        var OBJECTIVE = 'Senior Software Engineering Student Study at King Fahad University of Petroleum and Minirals. Expected Graduation at May 2021 Mobile developer works in: Flutter, Xcode and Android Studio'
+
+        $('#title').text("Ahmed Almoairfi");
+        $('#details').text(OBJECTIVE);
+    </script>
+    <script src="details.js"></script>
+
 
 </body>
+
 </html>
