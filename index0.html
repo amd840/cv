@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <style>
+        body {
+            background-color: #e4f6f5;
+            background: #e4f6f5;
+        }
+        
+        body.pushable>.pusher {
+            background: #e4f6f5;
+            min-height: 100%;
+        }
+        
+        .pusher {
+            min-height: 120%;
+        }
+        
+        .background {
+            background-color: #e4f6f5;
+        }
+        
+        .buttonc {
+            background-color: #bae8e8;
+            background: #bae8e8;
+        }
+        
+        .ui.piled.segment:after {
+            /* background-color: #2c698d; */
+        }
+        
+        .ui.piled.segment::before {
+            /* background-color: #2c698d; */
+        }
+        
+        .ui.piled.segment {
+            /* background-color: #2c698d; */
+        }
+        
+        .body.pushable {
+            background-color: #e4f6f5;
+            background: #e4f6f5;
+        }
+        
+        .ui.vertical.footer.segment {
+            background-color: #e4f6f5;
+        }
+        
+        @media (min-height: 320px) {
+            .ui.vertical.footer.segment {
+                /* Increased specificity for SO snippet priority */
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 760px) {
+            body.pushable>.pusher {
+                /* background: #e4f6f5; */
+                min-height: 150%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="ui sidebar inverted vertical menu">
+
+        <a id='OBJECTIVE' class="item">OBJECTIVE</a>
+        <a id='EDUCATIONS' class="item">EDUCATIONS</a>
+        <a id='EXPERIENCES' class="item">EXPERIENCES</a>
+        <a id='PROJECTS' class="item">PROJECTS</a>
+        <a id='ACTIVITIES' class="item">ACTIVITIES</a>
+        <a id='PROGRAMMINGLANGUAGES' class="item">PROGRAMMING LANGUAGES</a>
+        <a id='LANGUAGES' class="item">LANGUAGES</a>
+
+
+    </div>
+    <div class="pusher">
+
+        <!-- Site content !-->
+        <div class="ui fixed inverted main menu">
+            <div class="ui container ">
+                <Button id="menuBtn" class="ui button icon item" onclick="$('.ui.sidebar').sidebar('toggle');">
+                    <i class="content icon"></i>
+                </Button>
+
+                <div class="item">
+                    Ahmed Almoairfi
+                </div>
+
+
+            </div>
+        </div>
+        <div class="ui container">
+            <Button class="ui button  buttonc black"><i class="sidebar icon"></i>
+            </Button>
+
+
+            <div id="titleContainer" class="ui piled segment">
+                <h4 id='title' class="ui header ">A header</h4>
+                <p id='details' class="ui "></p>
+            </div>
+            <div id="additionsDiv" class='ui raised segment shown' hidden>
+                <h5 id="additionsTitle" class="ui blue ribbon  label">
+                </h5>
+                <p></p>
+
+                <div id="additions" class="ui relaxed divided list">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="ui vertical footer segment ">
+            <div class="ui center aligned container">
+                <div class="ui stackable grid">
+                    <div class="four wide column">
+                        <h4 class="ui header">Contact Info</h4>
+                        <div class="ui link list">
+                            <a class="item" href="mailto:ahmedalmoairfi@gmail.com" target="_blank"><i class="linkedin icon"></i>ahmedalmoairfi@gmail.com</a>
+                            <a class="item right justified" href="tel:+966543096731" target="_blank"><i class="phone icon"></i>+966 543096731</a>
+
+                            <a class="item" href="https://www.linkedin.com/in/ahmed-almoairfi-009a57167/" target="_blank"><i class="linkedin icon"></i>ahmed-almoairfi</a>
+                        </div>
+                    </div>
+
+                    <div class="ten wide right floated column">
+                        <h4 class="ui header">About Me</h4>
+                        <p> Mobile developer works on: Flutter, Xcode, Kotlin and Java<br> Backend developer works on: Python Django</p>
+                    </div>
+                </div>
+                <div class="ui section divider"></div>
+                <div class="ui horizontal small divided link list">
+                    <a class="item">© May 2021 by Ahmed Almoairfi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var OBJECTIVE = 'Senior Software Engineering Student Study at King Fahad University of Petroleum and Minirals. Expected Graduation at May 2021 Mobile developer works in: Flutter, Xcode and Android Studio'
+
+        $('#title').text("OBJECTIVE");
+        $('#details').text(OBJECTIVE);
+    </script>
+    <script src="details.js"></script>
+
+
+</body>
+
+</html>
