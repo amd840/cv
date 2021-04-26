@@ -40,6 +40,15 @@ $('#OBJECTIVE').click(function() {
         $('body').css("background", "#e4f6f5");
         $('#additionsDiv').attr('hidden', true);
 
+
+
+
+
+
+
+
+
+
     }
 
 );
