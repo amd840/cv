@@ -1,6 +1,6 @@
 var OBJECTIVE = 'Fresh Graduate Software Engineer. <br>Mobile Developer works in: Flutter, Xcode and Kotlin and Java.<br>Backend Developer works on: Python Django'
-var EDUCATIONS = 'King Fahad University of Petroleum and Minerals, B.S., Software Engineer May 2021.'
-var SHORTCOURSES = [{ url: 'https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjkmY2VydF9ubz02JnRlcm09MjYmc2Vzc2lvbj0x', title: 'Data Analysis using Python', date: 'Feb 2021' },
+var EDUCATIONS = 'King Fahad University of Petroleum and Minerals, B.S., Software Engineer Jul 2021.'
+var SHORTCOURSES = [{ url: 'https://confirm.udacity.com/VDZQLTAD', title: 'Nanodegree in Data Analysis with Udacity', date: 'May - June 2021' },{ url: 'https://www.udemy.com/certificate/UC-60d01a30-a299-4e8e-be45-9fe084157522/', title: 'Flutter & dart 42 hour course from Udemy', date: 'Jan - Jul 2021' },{ url: 'https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjkmY2VydF9ubz02JnRlcm09MjYmc2Vzc2lvbj0x', title: 'Data Analysis using Python', date: 'Feb 2021' },
     { url: 'http://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0xMjAmY2VydF9ubz03JnRlcm09MjUmc2Vzc2lvbj0x', title: 'Introduction to Marketing (For Engineers and Scientists', date: 'Sep 2020' }, { url: 'https://ssc.kfupm.edu.sa/index.php?mp=cert_verify_sc&qstr=c2Nfb2ZyZD0yMSZjZXJ0X25vPTMmdGVybT0xNSZzZXNzaW9uPTE=', title: 'Short course in Embedded system with Arduino as platform', date: 'Aug 2017' }
 ]
 
