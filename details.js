@@ -8,7 +8,7 @@ var SHORTCOURSES = [{ url: 'https://confirm.udacity.com/VDZQLTAD', title: 'Nanod
 
 var EXPERIENCESt = 'I word on some Software Documentation in the Software Courses.'
 
-var EXPERIENCES = [{ detail: 'Work in software project for senior project', img: './img/kfupm.jpg', date: 'Sep 2020 - Apr 2021' }, { detail: 'Software Engineering Trainee at NyarTech Company', img: './img/nyartech.jpg', date: 'Jul 2020 - Sep 2020' }, { detail: 'Season job with Zain for one month', img: './img/zain.jpg', date: 'Jul 2020' }]
+var EXPERIENCES = [{ detail: 'Software Quality Engineer with Testcrew', img: './img/testcrew.png', date: 'Aug 2020 - Now' },{ detail: 'Work in software project for senior project', img: './img/kfupm.jpg', date: 'Sep 2020 - Apr 2021' }, { detail: 'Software Engineering Trainee at NyarTech Company', img: './img/nyartech.jpg', date: 'Jul 2020 - Sep 2020' }, { detail: 'Season job with Zain for one month', img: './img/zain.jpg', date: 'Jul 2020' }]
 var CERTIFICATIONS = [{detail:'ISTQB Certified Tester Foundation Level'}]
 var PROJECTSt = 'I work on prototype projects and some complete projects.<br>I work on Native Mobile Devolopment and Web Back-End and Full-Stack Devolopment'
 
