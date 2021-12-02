@@ -9,6 +9,7 @@ var SHORTCOURSES = [{ url: 'https://confirm.udacity.com/VDZQLTAD', title: 'Nanod
 var EXPERIENCESt = 'I word on some Software Documentation in the Software Courses.'
 
 var EXPERIENCES = [{ detail: 'Work in software project for senior project', img: './img/kfupm.jpg', date: 'Sep 2020 - Apr 2021' }, { detail: 'Software Engineering Trainee at NyarTech Company', img: './img/nyartech.jpg', date: 'Jul 2020 - Sep 2020' }, { detail: 'Season job with Zain for one month', img: './img/zain.jpg', date: 'Jul 2020' }]
+var CERTIFICATIONS = [{detail:'123'}]
 var PROJECTSt = 'I work on prototype projects and some complete projects.<br>I work on Native Mobile Devolopment and Web Back-End and Full-Stack Devolopment'
 
 var PROJECTS = [{ detail: 'Work in privacy project to edit text privately and securely', urlType: 'GitHub', url: 'https://github.com/amd840/COE426' },
@@ -85,6 +86,23 @@ $('#EXPERIENCES').click(function() {
     $('#additionsTitle').text("EXPERIENCES");
     $('#additions').html(additions);
 });
+$('#CERTIFICATIONS').click(function() {
+    $('#title').text("CERTIFICATIONS");
+    $('#details').text('');
+    $('.ui.sidebar').sidebar('toggle');
+    $('#additionsDiv').attr('hidden', false);
+    $('#titleContainer').attr('hidden', true);
+
+    additions = ''
+    EXPERIENCES.forEach((values, keys) => {
+
+        additions += `<div class="item"><img class="ui avatar image" src= "./img/cer.png"><div class="content"><p class="header">${values['detail']}</p> </div></div>`
+    })
+
+    $('#additionsTitle').text("EXPERIENCES");
+    $('#additions').html(additions);
+});
+
 $('#PROJECTS').click(function() {
     $('#title').text("PROJECTS");
     $('#details').html(PROJECTSt);
