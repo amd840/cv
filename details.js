@@ -94,12 +94,12 @@ $('#CERTIFICATIONS').click(function() {
     $('#titleContainer').attr('hidden', true);
 
     additions = ''
-    EXPERIENCES.forEach((values, keys) => {
+    CERTIFICATIONS.forEach((values, keys) => {
 
         additions += `<div class="item"><img class="ui avatar image" src= "./img/cer.png"><div class="content"><p class="header">${values['detail']}</p> </div></div>`
     })
 
-    $('#additionsTitle').text("EXPERIENCES");
+    $('#additionsTitle').text("CERTIFICATIONS");
     $('#additions').html(additions);
 });
 
